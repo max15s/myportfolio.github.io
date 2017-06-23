@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<title>Mayank Sharma</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="prefetch" href="images/GitHub-Mark-64px.png">
+	<link rel="prefetch" href="images/In-Black-48px-TM.png">
+	<link rel="prefetch" href="images/TwitterLogo_55acee_64.png">
+	<script type="text/javascript" src="scripts/script.js" ></script>
+	<script type="text/javascript" src="scripts/jquery-1.11.3.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			// Too old-school?
+			$("div#github_logo").mouseover(function() {
+				$("div#github_text").css("visibility", "visible");
+			});
+			$("div#github_logo").mouseout(function() {
+				$("div#github_text").css("visibility", "hidden");
+			});
+			$("div#twitter_logo").mouseover(function() {
+				$("div#twitter_text").css("visibility", "visible");
+			});
+			$("div#twitter_logo").mouseout(function() {
+				$("div#twitter_text").css("visibility", "hidden");
+			});
+			$("div#linkedin_logo").mouseover(function() {
+				$("div#linkedin_text").css("visibility", "visible");
+			});
+			$("div#linkedin_logo").mouseout(function() {
+				$("div#linkedin_text").css("visibility", "hidden");
+			});
+			*/
+			$("div#footer").mouseover(function() {
+				$("div#work").css("visibility", "visible");
+			});
+			$("div#footer").mouseout(function() {
+				$("div#work").css("visibility", "hidden");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="work"></div>
+	<div id="main">
+		<div id="content">
+			<div id="content_top">Mayank Sharma</div>
+			<div id="content_bottom">
+				<img src="images/GitHub-Mark-64px.png" alt="github" style="display:none">
+				<img src="images/In-Black-48px-TM.png" alt="linkedin" style="display:none">
+				<img src="images/TwitterLogo_55acee_64.png" alt="twitter" style="display:none">
+				
+				<div id="github"><a href=""><div id="github_logo"></div></a><div id="github_text">GitHub <strong></strong></div></div>
+				<div id="twitter"><a href=""><div id="twitter_logo"></div></a><div id="twitter_text">Twitter <strong></strong></div></div>
+				<div id="linkedin"><a href=""><div id="linkedin_logo"></div></a><div id="linkedin_text">LinkedIn <strong></strong></div></div>
+			</div>
+		</div>
+		<div id="footerWrap"><div id="footer"></div></div>
+	</div>
+</body>
+</html>
